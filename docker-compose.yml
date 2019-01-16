@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  sosmart:
+    container_name: so-smart-service
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    command: /app/run.sh
+    networks:
+      - back-tier
+
+networks:
+  back-tier:
+    external:
+      name: "so-smart-network"

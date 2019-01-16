@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}So Smart{% endblock %}
+
+{% block content %}
+        <form method="post" action="/" class="ui form">
+            <div class="ui form">
+              <div class="field">
+                <textarea name="sentence"></textarea>
+              </div>
+            </div>
+            <br>
+             <div class="actions" style="text-align: right">
+                <button type="submit" class="ui positive labeled icon button">
+                    Generate<i class="save icon"></i>
+                </button>
+            </div>
+        </form>
+{% endblock %}
+
+{% block script %}
+    <script>
+    </script>
+{% endblock %}
