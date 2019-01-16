@@ -27,7 +27,9 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. Start the HTTP service `./run.sh`
+5.(Optional) You might have to give executable permissions to the run.sh `chmod +x run.sh`
+
+6. Start the HTTP service `./run.sh`
 
 
 Deployment with Docker
@@ -44,7 +46,9 @@ Deployment with Docker
 sudo docker network create so-smart-network
 ```
 
-4. Create a docker network
+4.(Optional) You might have to give executable permissions to the run.sh `chmod +x run.sh`
+
+5. Create a docker network
 ```bash
 sudo docker-compose up --build -d
 ```
