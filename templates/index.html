@@ -16,6 +16,12 @@
                 </button>
             </div>
         </form>
+        {% if so_smart %}
+        <div class="ui segment">
+          <h4 class="ui header">Show how smart you are</h4>
+          <p>{{so_smart}}</p>
+        </div>
+        {% endif %}
 {% endblock %}
 
 {% block script %}
